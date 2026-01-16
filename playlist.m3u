@@ -1,25 +1,287 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="TRT1 HD.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6c/TRT_1_logo_%282012-2021%29.png" group-title="Ulusal",TRT1
-http://89.187.191.41/TRT-1-HD-TR/video.m3u8
-#EXTINF:-1 tvg-id="ATV HD.tr" tvg-logo="https://i.ibb.co/DwFJ0vn/atv.png" group-title="Ulusal",ATV
-http://95.174.71.114/TR-ATV/index.m3u8
-#EXTINF:-1 tvg-id="STAR TV HD.tr" tvg-logo="https://i.ibb.co/hY3Z8zx/star-tv.png" group-title="Ulusal",STAR TV
-http://95.174.71.114:80/TR-STAR/index.m3u8
-#EXTINF:-1 tvg-id="SHOW TV HD.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/f1/Logo_of_Show_TV.png" group-title="Ulusal",SHOW TV
-http://95.174.71.114:80/TR-SHOW/index.m3u8
-#EXTINF:-1 tvg-id="BEYAZ TV HD.tr" tvg-logo="https://tvprofil.com/img/kanali-logo/Beyaz_TV_TR_logo_v2.png?1734094253" group-title="Ulusal",BEYAZ TV
-https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_1080p.m3u8
-#EXTINF:-1 tvg-id="TV8 HD.tr" tvg-logo="https://i.ibb.co/Kr5SFY1/tv8.png" group-title="Ulusal",TV 8
-http://95.174.71.114/TR-TV8/index.m3u8
-#EXTINF:-1 tvg-id="KANAL 7 HD.tr" tvg-logo="https://e7.pngegg.com/pngimages/361/407/png-clipart-kanal-7-high-definition-television-television-channel-streaming-television-others-television-angle-thumbnail.png" group-title="Ulusal",KANAL 7
-https://kanal7-live.daioncdn.net/kanal7/kanal7_1080p.m3u8
-#EXTINF:-1 tvg-id="360 HD.tr" tvg-logo="https://i.ibb.co/s3gJCGL/360.png" group-title="Ulusal",360 TV
-https://turkmedya-live.ercdn.net/tv360/tv360_720p.m3u8
-#EXTINF:-1 tvg-id="HABERTÜRK HD.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/78/Haberturk_logo.png" group-title="Haber",HABER TURK
-https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/haberturktv/haberturktv_1080p.m3u8
-#EXTINF:-1 tvg-id="TRT HABER HD.tr" tvg-logo="https://logowik.com/content/uploads/images/trt-haber5539.jpg" group-title="Haber",TRT HABER
-https://tv-trthaber.medya.trt.com.tr/master_720.m3u8
-#EXTINF:-1 tvg-id="KanalD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/08/Kanal_D_logo_2011.png" group-title="Ulusal Kanallar",Kanal D
-https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
-#EXTINF:-1 tvg-id="NOWTV.tr" tvg-logo="https://www.nowtv.com.tr/static/img/now-logo.png", NOW TV
-https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8|User-Agent=Mozilla/5.0
+#EXTINF:-1 tvg-id="TRT1.tr" tvg-name="TR:TRT 1 HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulusal/trt1.png" group-title="TURK ULUSAL",TR:TRT 1 HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/88956
+#EXTINF:-1 tvg-id="TRT1.tr" tvg-name="TR:TRT 1 HD [yedek]" tvg-logo="https://i0.wp.com/resim.yayins.com/ulusal/trt1.png" group-title="TURK ULUSAL",TR:TRT 1 HD [yedek]
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/104091
+#EXTINF:-1 tvg-id="TRT1.tr" tvg-name="TR:TRT 1 HQ" tvg-logo="https://i0.wp.com/resim.yayins.com/ulusal/trt1.png" group-title="TURK ULUSAL",TR:TRT 1 HQ
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/88955
+#EXTINF:-1 tvg-id="ATV.tr" tvg-name="TR:ATV HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulusal/atv.png" group-title="TURK ULUSAL",TR:ATV HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/88959
+#EXTINF:-1 tvg-id="ATV.tr" tvg-name="TR:ATV HQ" tvg-logo="https://i0.wp.com/resim.yayins.com/ulusal/atv.png" group-title="TURK ULUSAL",TR:ATV HQ
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/88958
+#EXTINF:-1 tvg-id="ShowTV.tr" tvg-name="TR:SHOW TV HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulusal/showtv.png" group-title="TURK ULUSAL",TR:SHOW TV HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/88962
+#EXTINF:-1 tvg-id="ShowTV.tr" tvg-name="TR:SHOW TV HQ" tvg-logo="https://i0.wp.com/resim.yayins.com/ulusal/showtv.png" group-title="TURK ULUSAL",TR:SHOW TV HQ
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/88961
+#EXTINF:-1 tvg-id="StarTV.tr" tvg-name="TR:STAR TV HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulusal/startv.png" group-title="TURK ULUSAL",TR:STAR TV HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/88965
+#EXTINF:-1 tvg-id="StarTV.tr" tvg-name="TR:STAR TV HQ" tvg-logo="https://i0.wp.com/resim.yayins.com/ulusal/startv.png" group-title="TURK ULUSAL",TR:STAR TV HQ
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/88964
+#EXTINF:-1 tvg-id="KanalD.tr" tvg-name="TR:KANAL D HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulusal/kanald.png" group-title="TURK ULUSAL",TR:KANAL D HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/88968
+#EXTINF:-1 tvg-id="KanalD.tr" tvg-name="TR:KANAL D HQ" tvg-logo="https://i0.wp.com/resim.yayins.com/ulusal/kanald.png" group-title="TURK ULUSAL",TR:KANAL D HQ
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/88967
+#EXTINF:-1 tvg-id="Kanal7.tr" tvg-name="TR:KANAL 7 HQ" tvg-logo="https://i0.wp.com/resim.yayins.com/ulusal/kanal7.png" group-title="TURK ULUSAL",TR:KANAL 7 HQ
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/88976
+#EXTINF:-1 tvg-id="Kanal7.tr" tvg-name="TR:KANAL 7 HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulusal/kanal7.png" group-title="TURK ULUSAL",TR:KANAL 7 HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/88977
+#EXTINF:-1 tvg-id="" tvg-name="TR:ATV AVRUPA HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulusal/atveuro.png" group-title="TURK ULUSAL",TR:ATV AVRUPA HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/88990
+#EXTINF:-1 tvg-id="" tvg-name="TR:TRT 1 UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulusal/trt1.png" group-title="TURK UHD",TR:TRT 1 UHD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/88957
+#EXTINF:-1 tvg-id="" tvg-name="TR:TRT 1 UHD [yedek]" tvg-logo="https://i0.wp.com/resim.yayins.com/ulusal/trt1.png" group-title="TURK UHD",TR:TRT 1 UHD [yedek]
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/104092
+#EXTINF:-1 tvg-id="" tvg-name="TR:ATV UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulusal/atv.png" group-title="TURK UHD",TR:ATV UHD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/88960
+#EXTINF:-1 tvg-id="" tvg-name="TR:SHOW TV UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulusal/showtv.png" group-title="TURK UHD",TR:SHOW TV UHD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/88963
+#EXTINF:-1 tvg-id="" tvg-name="TR:STAR TV UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulusal/startv.png" group-title="TURK UHD",TR:STAR TV UHD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/88966
+#EXTINF:-1 tvg-id="" tvg-name="TR:KANAL D UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulusal/kanald.png" group-title="TURK UHD",TR:KANAL D UHD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/88969
+#EXTINF:-1 tvg-id="" tvg-name="TR:KANAL 7 UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulusal/kanal7.png" group-title="TURK UHD",TR:KANAL 7 UHD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/88978
+#EXTINF:-1 tvg-id="" tvg-name="TR:KANAL 7 EU UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulusal/kanal7avrupa.png" group-title="TURK UHD",TR:KANAL 7 EU UHD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/88992
+#EXTINF:-1 tvg-id="" tvg-name="TR:TRT SPOR UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/spor/trtspor.png" group-title="TURK UHD",TR:TRT SPOR UHD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89337
+#EXTINF:-1 tvg-id="" tvg-name="TR:A SPOR UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/spor/aspor.png" group-title="TURK UHD",TR:A SPOR UHD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89087
+#EXTINF:-1 tvg-id="" tvg-name="TR:TRT SPOR HD" tvg-logo="https://i0.wp.com/resim.yayins.com/spor/trtspor.png" group-title="TURK SPOR",TR:TRT SPOR HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89081
+#EXTINF:-1 tvg-id="" tvg-name="TR:A SPOR HD" tvg-logo="https://i0.wp.com/resim.yayins.com/spor/aspor.png" group-title="TURK SPOR",TR:A SPOR HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89086
+#EXTINF:-1 tvg-id="" tvg-name="TR:A SPOR HQ" tvg-logo="https://i0.wp.com/resim.yayins.com/spor/aspor.png" group-title="TURK SPOR",TR:A SPOR HQ
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89085
+#EXTINF:-1 tvg-id="" tvg-name="TR:A SPOR RADYO" tvg-logo="https://i0.wp.com/resim.yayins.com/radyo/a-spor-radyo.png" group-title="TURKISH RADYO",TR:A SPOR RADYO
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/115462
+#EXTINF:-1 tvg-id="" tvg-name="TR:The Boy, the Mole, the Fox and the Horse 2022" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/oQRgyQCzcyZvE6w5heM9ktVY0LT.jpg" group-title="ANIMASYON",TR:The Boy, the Mole, the Fox and the Horse 2022
+http://happytv.ooguy.com:8080/movie/erdem10/Cw1360cv/103085.mp4
+#EXTINF:-1 tvg-id="" tvg-name="TR:Whiskey Tango Foxtrot 2016" tvg-logo="http://germanymain.de:8000/images/279641_movie_poster.jpg" group-title="DRAM",TR:Whiskey Tango Foxtrot 2016
+http://happytv.ooguy.com:8080/movie/erdem10/Cw1360cv/40202.mp4
+#EXTINF:-1 tvg-id="" tvg-name="TR:Foxcatcher Takımı 2014" tvg-logo="http://germanydns.com:8000/images/movies/w6Sl079QtUcQ9dVQ2RP6aN9NBXx.jpg" group-title="DRAM",TR:Foxcatcher Takımı 2014
+http://happytv.ooguy.com:8080/movie/erdem10/Cw1360cv/67734.mp4
+#EXTINF:-1 tvg-id="" tvg-name="TR:Firefox 1982" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/rFIjEbUbsiMwYV0MBGaUTdYlJGa.jpg" group-title="SAVAS",TR:Firefox 1982
+http://happytv.ooguy.com:8080/movie/erdem10/Cw1360cv/78843.mp4
+#EXTINF:-1 tvg-id="" tvg-name="DE:ATV HD" tvg-logo="https://i0.wp.com/resim.yayins.com/alman/ek2/atv.png" group-title="DEUTSCHE",DE:ATV HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89966
+#EXTINF:-1 tvg-id="" tvg-name="DE:HANDYSTAR TV HD" tvg-logo="https://i0.wp.com/resim.yayins.com/alman/handystar.png" group-title="DEUTSCHE",DE:HANDYSTAR TV HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/88668
+#EXTINF:-1 tvg-id="" tvg-name="DE:GOLDSTAR TV ғʜᴅ" tvg-logo="https://i0.wp.com/resim.yayins.com/alman/amazon/goldstartv.png" group-title="DEUTSCHE (AMAZON)",DE:GOLDSTAR TV ғʜᴅ
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/115026
+#EXTINF:-1 tvg-id="" tvg-name="DE:MAGENTA SPORT" tvg-logo="https://i0.wp.com/resim.yayins.com/alman/telekomsport19.png" group-title="DEUTSCHE SPORT",DE:MAGENTA SPORT
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89962
+#EXTINF:-1 tvg-id="" tvg-name="DE:MAGENTA SPORT PROGRAMMÜBERSICHT HD" tvg-logo="https://i0.wp.com/resim.yayins.com/alman/telekomsport20.png" group-title="DEUTSCHE SPORT",DE:MAGENTA SPORT PROGRAMMÜBERSICHT HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89963
+#EXTINF:-1 tvg-id="" tvg-name="DE:MAGENTA SPORT 1 HD [3.LIGA]" tvg-logo="http://www.yellow-panel.com:8080/baka67akop/QiYWkageU7/339251" group-title="DEUTSCHE SPORT",DE:MAGENTA SPORT 1 HD [3.LIGA]
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89944
+#EXTINF:-1 tvg-id="" tvg-name="DE:MAGENTA SPORT 2 HD [3.LIGA]" tvg-logo="https://i0.wp.com/resim.yayins.com/alman/telekomsport2.png" group-title="DEUTSCHE SPORT",DE:MAGENTA SPORT 2 HD [3.LIGA]
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89945
+#EXTINF:-1 tvg-id="" tvg-name="DE:MAGENTA SPORT 3 HD [3.LIGA]" tvg-logo="https://i0.wp.com/resim.yayins.com/alman/telekomsport3.png" group-title="DEUTSCHE SPORT",DE:MAGENTA SPORT 3 HD [3.LIGA]
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89946
+#EXTINF:-1 tvg-id="" tvg-name="DE:MAGENTA SPORT 4 HD [3.LIGA]" tvg-logo="https://i0.wp.com/resim.yayins.com/alman/telekomsport4.png" group-title="DEUTSCHE SPORT",DE:MAGENTA SPORT 4 HD [3.LIGA]
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89947
+#EXTINF:-1 tvg-id="" tvg-name="DE:MAGENTA SPORT 5 HD [3.LIGA]" tvg-logo="https://i0.wp.com/resim.yayins.com/alman/telekomsport5.png" group-title="DEUTSCHE SPORT",DE:MAGENTA SPORT 5 HD [3.LIGA]
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89948
+#EXTINF:-1 tvg-id="" tvg-name="DE:MAGENTA SPORT 6 HD [3.LIGA]" tvg-logo="https://i0.wp.com/resim.yayins.com/alman/telekomsport6.png" group-title="DEUTSCHE SPORT",DE:MAGENTA SPORT 6 HD [3.LIGA]
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89949
+#EXTINF:-1 tvg-id="" tvg-name="DE:MAGENTA SPORT 7 HD [3.LIGA]" tvg-logo="https://i0.wp.com/resim.yayins.com/alman/telekomsport7.png" group-title="DEUTSCHE SPORT",DE:MAGENTA SPORT 7 HD [3.LIGA]
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89950
+#EXTINF:-1 tvg-id="" tvg-name="DE:MAGENTA SPORT 8 HD [3.LIGA]" tvg-logo="https://i0.wp.com/resim.yayins.com/alman/telekomsport8.png" group-title="DEUTSCHE SPORT",DE:MAGENTA SPORT 8 HD [3.LIGA]
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89951
+#EXTINF:-1 tvg-id="" tvg-name="DE:MAGENTA SPORT 9 HD [3.LIGA]" tvg-logo="https://i0.wp.com/resim.yayins.com/alman/telekomsport9.png" group-title="DEUTSCHE SPORT",DE:MAGENTA SPORT 9 HD [3.LIGA]
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89952
+#EXTINF:-1 tvg-id="" tvg-name="DE:MAGENTA SPORT 10 HD [3.LIGA]" tvg-logo="https://i0.wp.com/resim.yayins.com/alman/telekomsport10.png" group-title="DEUTSCHE SPORT",DE:MAGENTA SPORT 10 HD [3.LIGA]
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89953
+#EXTINF:-1 tvg-id="" tvg-name="DE:MAGENTA SPORT 11 HD [3.LIGA]" tvg-logo="https://i0.wp.com/resim.yayins.com/alman/telekomsport11.png" group-title="DEUTSCHE SPORT",DE:MAGENTA SPORT 11 HD [3.LIGA]
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89954
+#EXTINF:-1 tvg-id="" tvg-name="DE:MAGENTA SPORT 12 HD [3.LIGA]" tvg-logo="https://i0.wp.com/resim.yayins.com/alman/telekomsport12.png" group-title="DEUTSCHE SPORT",DE:MAGENTA SPORT 12 HD [3.LIGA]
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89955
+#EXTINF:-1 tvg-id="" tvg-name="DE:MAGENTA SPORT 13 HD [3.LIGA]" tvg-logo="https://i0.wp.com/resim.yayins.com/alman/telekomsport13.png" group-title="DEUTSCHE SPORT",DE:MAGENTA SPORT 13 HD [3.LIGA]
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89956
+#EXTINF:-1 tvg-id="" tvg-name="DE:MAGENTA SPORT 14 HD [3.LIGA]" tvg-logo="https://i0.wp.com/resim.yayins.com/alman/telekomsport14.png" group-title="DEUTSCHE SPORT",DE:MAGENTA SPORT 14 HD [3.LIGA]
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89957
+#EXTINF:-1 tvg-id="" tvg-name="DE:MAGENTA SPORT 15 HD [3.LIGA]" tvg-logo="https://i0.wp.com/resim.yayins.com/alman/telekomsport15.png" group-title="DEUTSCHE SPORT",DE:MAGENTA SPORT 15 HD [3.LIGA]
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89958
+#EXTINF:-1 tvg-id="" tvg-name="DE:MAGENTA SPORT 16 HD [3.LIGA]" tvg-logo="https://i0.wp.com/resim.yayins.com/alman/telekomsport16.png" group-title="DEUTSCHE SPORT",DE:MAGENTA SPORT 16 HD [3.LIGA]
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89959
+#EXTINF:-1 tvg-id="" tvg-name="DE:MAGENTA SPORT 17 HD [3.LIGA]" tvg-logo="https://i0.wp.com/resim.yayins.com/alman/telekomsport17.png" group-title="DEUTSCHE SPORT",DE:MAGENTA SPORT 17 HD [3.LIGA]
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89960
+#EXTINF:-1 tvg-id="" tvg-name="DE:MAGENTA SPORT 18 HD [3.LIGA]" tvg-logo="https://i0.wp.com/resim.yayins.com/alman/telekomsport18.png" group-title="DEUTSCHE SPORT",DE:MAGENTA SPORT 18 HD [3.LIGA]
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/89961
+#EXTINF:-1 tvg-id="" tvg-name="DE:FIX UND FOXI HD" tvg-logo="https://i0.wp.com/resim.yayins.com/alman/fixfoxi.png" group-title="DEUTSCH KINDER",DE:FIX UND FOXI HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/110826
+#EXTINF:-1 tvg-id="" tvg-name="DE:Foxtrot Six 2019" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/WTKTypNs5mGvKB9wbMOU9jxwzX.jpg" group-title="DEUTSCHE SCIENCE-FICTION/FANTASY",DE:Foxtrot Six 2019
+http://happytv.ooguy.com:8080/movie/erdem10/Cw1360cv/79139.mp4
+#EXTINF:-1 tvg-id="" tvg-name="DE:Der fantastische Mr. Fox 2009" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/HiI7vGAq3lDcPLbMkDGNzSTPzT.jpg" group-title="DEUTSCHE ANIMATION",DE:Der fantastische Mr. Fox 2009
+http://happytv.ooguy.com:8080/movie/erdem10/Cw1360cv/70757.mp4
+#EXTINF:-1 tvg-id="" tvg-name="The Fox - 2021" tvg-logo="https://image.tmdb.org/t/p/w600_and_h900_bestv2/et0SWXtBqIMeLERefBL7mTLXoWA.jpg" group-title="NOUVEAUX FILM",The Fox - 2021
+http://happytv.ooguy.com:8080/movie/erdem10/Cw1360cv/106453.mp4
+#EXTINF:-1 tvg-id="" tvg-name="FR:Foxter & Max 2019" tvg-logo="http://germanymain.de:8000/images/movies/4vO1RgJnaVK3tLsIBw4eY4W1YDB.jpg" group-title="FRANCE VOD",FR:Foxter & Max 2019
+http://happytv.ooguy.com:8080/movie/erdem10/Cw1360cv/53011.mp4
+#EXTINF:-1 tvg-id="" tvg-name="FR:BABYMETAL - The Five Fox Festival in Japan - Black Fox Festival 2018" tvg-logo="http://germanydns.com:8000/images/movies/jUnAhiCAvSMKsZdx4jqLVLYZaQm.jpg" group-title="FRANCE VOD",FR:BABYMETAL - The Five Fox Festival in Japan - Black Fox Festival 2018
+http://happytv.ooguy.com:8080/movie/erdem10/Cw1360cv/64995.mp4
+#EXTINF:-1 tvg-id="" tvg-name="AT:ATV HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/osterreich.png" group-title="OSTERREICH",AT:ATV HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/110799
+#EXTINF:-1 tvg-id="" tvg-name="AT:ATV UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/osterreich.png" group-title="OSTERREICH",AT:ATV UHD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/110775
+#EXTINF:-1 tvg-id="" tvg-name="AT:ATV 2 UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/osterreich.png" group-title="OSTERREICH",AT:ATV 2 UHD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/110776
+#EXTINF:-1 tvg-id="" tvg-name="AT:ATV 2 HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/osterreich.png" group-title="OSTERREICH",AT:ATV 2 HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/110804
+#EXTINF:-1 tvg-id="" tvg-name="NL:FOX HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/holland.png" group-title="HOLLAND",NL:FOX HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/110705
+#EXTINF:-1 tvg-id="" tvg-name="KURD:ATV HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/kurdish.png" group-title="KURDISH",KURD:ATV HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/109857
+#EXTINF:-1 tvg-id="" tvg-name="AL:ATV HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/albania.png" group-title="ALBANIA",AL:ATV HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/109699
+#EXTINF:-1 tvg-id="" tvg-name="AL:FOX CRIME HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/albania.png" group-title="ALBANIA",AL:FOX CRIME HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/109753
+#EXTINF:-1 tvg-id="" tvg-name="AL:FOX NEWS HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/albania.png" group-title="ALBANIA",AL:FOX NEWS HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/109755
+#EXTINF:-1 tvg-id="" tvg-name="AL:KANAL D DRAMA HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/albania.png" group-title="ALBANIA",AL:KANAL D DRAMA HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/109692
+#EXTINF:-1 tvg-id="" tvg-name="AM:ATV HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/armenia.png" group-title="ARMENIA",AM:ATV HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/109659
+#EXTINF:-1 tvg-id="" tvg-name="AZ:ATV AZAD TV HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/azerbaycan.png" group-title="AZERBAYCAN",AZ:ATV AZAD TV HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/109637
+#EXTINF:-1 tvg-id="" tvg-name="AZ:ATV AZERBAYCAN UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/azerbaycan.png" group-title="AZERBAYCAN",AZ:ATV AZERBAYCAN UHD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/109611
+#EXTINF:-1 tvg-id="" tvg-name="AZ:ATV AZERBAYCAN HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/azerbaycan.png" group-title="AZERBAYCAN",AZ:ATV AZERBAYCAN HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/109610
+#EXTINF:-1 tvg-id="" tvg-name="BIH:ATV HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",BIH:ATV HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/109578
+#EXTINF:-1 tvg-id="" tvg-name="EXYU:Nova Sport SR HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",EXYU:Nova Sport SR HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/111725
+#EXTINF:-1 tvg-id="" tvg-name="EXYU:ARENA SPORT 1 (BiH) HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",EXYU:ARENA SPORT 1 (BiH) HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/111694
+#EXTINF:-1 tvg-id="" tvg-name="EXYU:ARENA SPORT 1 HR" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",EXYU:ARENA SPORT 1 HR
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/111675
+#EXTINF:-1 tvg-id="" tvg-name="EXYU:ARENA SPORT 1 PREMIUM HD (SR)" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",EXYU:ARENA SPORT 1 PREMIUM HD (SR)
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/111685
+#EXTINF:-1 tvg-id="" tvg-name="EXYU:ARENA SPORT 1 SR" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",EXYU:ARENA SPORT 1 SR
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/111688
+#EXTINF:-1 tvg-id="" tvg-name="EXYU:ARENA SPORT 10 HR" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",EXYU:ARENA SPORT 10 HR
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/111684
+#EXTINF:-1 tvg-id="" tvg-name="EXYU:ARENA SPORT 2 HR" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",EXYU:ARENA SPORT 2 HR
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/111676
+#EXTINF:-1 tvg-id="" tvg-name="EXYU:ARENA SPORT 2 PREMIUM HD (SR)" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",EXYU:ARENA SPORT 2 PREMIUM HD (SR)
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/111686
+#EXTINF:-1 tvg-id="" tvg-name="EXYU:ARENA SPORT 2 SR" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",EXYU:ARENA SPORT 2 SR
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/111689
+#EXTINF:-1 tvg-id="" tvg-name="EXYU:ARENA SPORT 3 HR" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",EXYU:ARENA SPORT 3 HR
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/111677
+#EXTINF:-1 tvg-id="" tvg-name="EXYU:ARENA SPORT 3 PREMIUM HD (SR)" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",EXYU:ARENA SPORT 3 PREMIUM HD (SR)
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/111687
+#EXTINF:-1 tvg-id="" tvg-name="EXYU:ARENA SPORT 3 SR" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",EXYU:ARENA SPORT 3 SR
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/111690
+#EXTINF:-1 tvg-id="" tvg-name="EXYU:ARENA SPORT 4 HR" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",EXYU:ARENA SPORT 4 HR
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/111678
+#EXTINF:-1 tvg-id="" tvg-name="EXYU:ARENA SPORT 4 SR" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",EXYU:ARENA SPORT 4 SR
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/111691
+#EXTINF:-1 tvg-id="" tvg-name="EXYU:ARENA SPORT 5 HR" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",EXYU:ARENA SPORT 5 HR
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/111679
+#EXTINF:-1 tvg-id="" tvg-name="EXYU:ARENA SPORT 5 SR" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",EXYU:ARENA SPORT 5 SR
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/111692
+#EXTINF:-1 tvg-id="" tvg-name="EXYU:ARENA SPORT 6 HR" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",EXYU:ARENA SPORT 6 HR
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/111680
+#EXTINF:-1 tvg-id="" tvg-name="EXYU:ARENA SPORT 6 SR" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",EXYU:ARENA SPORT 6 SR
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/111693
+#EXTINF:-1 tvg-id="" tvg-name="EXYU:ARENA SPORT 7 HR" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",EXYU:ARENA SPORT 7 HR
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/111681
+#EXTINF:-1 tvg-id="" tvg-name="EXYU:ARENA SPORT 8 HR" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",EXYU:ARENA SPORT 8 HR
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/111682
+#EXTINF:-1 tvg-id="" tvg-name="EXYU:ARENA SPORT 9 HR" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",EXYU:ARENA SPORT 9 HR
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/111683
+#EXTINF:-1 tvg-id="" tvg-name="HR:ARENA SPORT 1 HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",HR:ARENA SPORT 1 HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/109571
+#EXTINF:-1 tvg-id="" tvg-name="HR:ARENA SPORT 2 HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",HR:ARENA SPORT 2 HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/109572
+#EXTINF:-1 tvg-id="" tvg-name="HR:ARENA SPORT 3 HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",HR:ARENA SPORT 3 HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/109573
+#EXTINF:-1 tvg-id="" tvg-name="HR:ARENA SPORT 4 HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",HR:ARENA SPORT 4 HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/109574
+#EXTINF:-1 tvg-id="" tvg-name="HR:ARENA SPORT 5 HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/exyu.png" group-title="EXYU",HR:ARENA SPORT 5 HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/109575
+#EXTINF:-1 tvg-id="" tvg-name="CZ:ARENA SPORT HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/czech.png" group-title="CZECH REPUBLIC",CZ:ARENA SPORT HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/108966
+#EXTINF:-1 tvg-id="" tvg-name="CZ:NOVA SPORT 1 HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/czech.png" group-title="CZECH REPUBLIC",CZ:NOVA SPORT 1 HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/108969
+#EXTINF:-1 tvg-id="" tvg-name="CZ:NOVA SPORT 2 HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/czech.png" group-title="CZECH REPUBLIC",CZ:NOVA SPORT 2 HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/108970
+#EXTINF:-1 tvg-id="" tvg-name="PL:FOX COMEDY HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/poland.png" group-title="POLAND",PL:FOX COMEDY HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/109470
+#EXTINF:-1 tvg-id="" tvg-name="PL:FOX UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/poland.png" group-title="POLAND",PL:FOX UHD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/109469
+#EXTINF:-1 tvg-id="" tvg-name="BG ● CineStar TV A&T ʀᴀᴡ" tvg-logo="" group-title="BULGARIA",BG ● CineStar TV A&T ʀᴀᴡ
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/118362
+#EXTINF:-1 tvg-id="" tvg-name="BG ● CineStar TV ʀᴀᴡ" tvg-logo="" group-title="BULGARIA",BG ● CineStar TV ʀᴀᴡ
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/118361
+#EXTINF:-1 tvg-id="" tvg-name="BG ● Nova Sport ʀᴀᴡ" tvg-logo="" group-title="BULGARIA",BG ● Nova Sport ʀᴀᴡ
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/118332
+#EXTINF:-1 tvg-id="" tvg-name="BG ● Diema Sport ʀᴀᴡ" tvg-logo="" group-title="BULGARIA",BG ● Diema Sport ʀᴀᴡ
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/118327
+#EXTINF:-1 tvg-id="" tvg-name="BG ● Diema Sport 2 ʀᴀᴡ" tvg-logo="" group-title="BULGARIA",BG ● Diema Sport 2 ʀᴀᴡ
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/118328
+#EXTINF:-1 tvg-id="" tvg-name="BG ● Diema Sport 3 ʀᴀᴡ" tvg-logo="" group-title="BULGARIA",BG ● Diema Sport 3 ʀᴀᴡ
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/118329
+#EXTINF:-1 tvg-id="" tvg-name="ES:FOX HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/espana.png" group-title="ESPANA",ES:FOX HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/109159
+#EXTINF:-1 tvg-id="" tvg-name="ES:FOX HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/espana.png" group-title="ESPANA",ES:FOX HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/109209
+#EXTINF:-1 tvg-id="" tvg-name="ES:FOX LIFE HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/espana.png" group-title="ESPANA",ES:FOX LIFE HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/109160
+#EXTINF:-1 tvg-id="" tvg-name="ES:FOX LIFE HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/espana.png" group-title="ESPANA",ES:FOX LIFE HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/109211
+#EXTINF:-1 tvg-id="" tvg-name="ES:FOX LIFE UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/espana.png" group-title="ESPANA",ES:FOX LIFE UHD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/109210
+#EXTINF:-1 tvg-id="" tvg-name="ES:FOX NEWS HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/espana.png" group-title="ESPANA",ES:FOX NEWS HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/109361
+#EXTINF:-1 tvg-id="" tvg-name="ES:FOX UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/espana.png" group-title="ESPANA",ES:FOX UHD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/109208
+#EXTINF:-1 tvg-id="" tvg-name="US:FOX NEWS HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/usa.png" group-title="USA",US:FOX NEWS HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/108603
+#EXTINF:-1 tvg-id="" tvg-name="US:FOX SPORTS 1 HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/usa.png" group-title="USA",US:FOX SPORTS 1 HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/108605
+#EXTINF:-1 tvg-id="" tvg-name="US:FOX SPORTS 2 HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/usa.png" group-title="USA",US:FOX SPORTS 2 HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/108606
+#EXTINF:-1 tvg-id="" tvg-name="AR:KSA SPORT 1 HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/arabic.png" group-title="ARABIC",AR:KSA SPORT 1 HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/108496
+#EXTINF:-1 tvg-id="" tvg-name="RU:FOX HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/russian.png" group-title="RUSSIAN",RU:FOX HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/108372
+#EXTINF:-1 tvg-id="" tvg-name="PT:FOX COMEDY HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/portugal.png" group-title="PORTUGAL",PT:FOX COMEDY HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/108284
+#EXTINF:-1 tvg-id="" tvg-name="PT:FOX CRIME UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/portugal.png" group-title="PORTUGAL",PT:FOX CRIME UHD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/108283
+#EXTINF:-1 tvg-id="" tvg-name="PT:FOX LIFE UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/portugal.png" group-title="PORTUGAL",PT:FOX LIFE UHD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/108282
+#EXTINF:-1 tvg-id="" tvg-name="PT:FOX UHD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/portugal.png" group-title="PORTUGAL",PT:FOX UHD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/108281
+#EXTINF:-1 tvg-id="" tvg-name="GR:FOX TV GREECE" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/greece.png" group-title="GREECE",GR:FOX TV GREECE
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/108058
+#EXTINF:-1 tvg-id="" tvg-name="GR:NOVA SPORT PRIME HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/greece.png" group-title="GREECE",GR:NOVA SPORT PRIME HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/108034
+#EXTINF:-1 tvg-id="" tvg-name="GR:NOVA SPORT START HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/greece.png" group-title="GREECE",GR:NOVA SPORT START HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/108035
+#EXTINF:-1 tvg-id="" tvg-name="GR:NOVA SPORTS 1 HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/greece.png" group-title="GREECE",GR:NOVA SPORTS 1 HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/108030
+#EXTINF:-1 tvg-id="" tvg-name="GR:NOVA SPORTS 2 HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/greece.png" group-title="GREECE",GR:NOVA SPORTS 2 HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/108029
+#EXTINF:-1 tvg-id="" tvg-name="GR:NOVA SPORTS 3 HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/greece.png" group-title="GREECE",GR:NOVA SPORTS 3 HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/108031
+#EXTINF:-1 tvg-id="" tvg-name="GR:NOVA SPORTS 4 HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/greece.png" group-title="GREECE",GR:NOVA SPORTS 4 HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/108032
+#EXTINF:-1 tvg-id="" tvg-name="GR:NOVA SPORTS 5 HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/greece.png" group-title="GREECE",GR:NOVA SPORTS 5 HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/108033
+#EXTINF:-1 tvg-id="" tvg-name="RO:PRIMA SPORT 1 HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/romania.png" group-title="ROMANIA",RO:PRIMA SPORT 1 HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/107647
+#EXTINF:-1 tvg-id="" tvg-name="RO:PRIMA SPORT 2 HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/romania.png" group-title="ROMANIA",RO:PRIMA SPORT 2 HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/107648
+#EXTINF:-1 tvg-id="" tvg-name="RO:PRIMA SPORT 3 HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/romania.png" group-title="ROMANIA",RO:PRIMA SPORT 3 HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/107649
+#EXTINF:-1 tvg-id="" tvg-name="RO:PRIMA SPORT 4 HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/romania.png" group-title="ROMANIA",RO:PRIMA SPORT 4 HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/107650
+#EXTINF:-1 tvg-id="" tvg-name="RO:KANAL D HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/romania.png" group-title="ROMANIA",RO:KANAL D HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/107609
+#EXTINF:-1 tvg-id="" tvg-name="SE:TV8 HD" tvg-logo="https://i0.wp.com/resim.yayins.com/ulkeler/sweden.png" group-title="SWEDEN",SE:TV8 HD
+http://happytv.ooguy.com:8080/erdem10/Cw1360cv/107523
