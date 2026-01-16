@@ -1,17 +1,15 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/fokus-fokus/IPTV/main/logos/trt1.png" group-title="ULUSAL",TRT 1
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/fokus-fokus/IPTV/main/logos/trt1.png" group-title="Ulusal Kanallar",TRT 1
 https://mn-nl.mncdn.com/blutv_trt1/smil:trt1_sd.smil/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/fokus-fokus/IPTV/main/logos/kanald.png" group-title="ULUSAL",KANAL D
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/fokus-fokus/IPTV/main/logos/kanald.png" group-title="Ulusal Kanallar",KANAL D
 https://mn-nl.mncdn.com/blutv_kanald/smil:kanald_sd.smil/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/fokus-fokus/IPTV/main/logos/showtv.png" group-title="ULUSAL",SHOW TV
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/fokus-fokus/IPTV/main/logos/showtv.png" group-title="Ulusal Kanallar",SHOW TV
 https://mn-nl.mncdn.com/blutv_showtv/smil:show_sd.smil/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/fokus-fokus/IPTV/main/logos/startv.png" group-title="ULUSAL",STAR TV
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/fokus-fokus/IPTV/main/logos/startv.png" group-title="Ulusal Kanallar",STAR TV
 https://mn-nl.mncdn.com/blutv_startv/smil:startv_sd.smil/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/fokus-fokus/IPTV/main/logos/atv.png" group-title="ULUSAL",ATV
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/fokus-fokus/IPTV/main/logos/atv.png" group-title="Ulusal Kanallar",ATV
 https://mn-nl.mncdn.com/blutv_atv/smil:atv_sd.smil/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/fokus-fokus/IPTV/main/logos/tv8.png" group-title="ULUSAL",TV8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/fokus-fokus/IPTV/main/logos/tv8.png" group-title="Ulusal Kanallar",TV8
 https://mn-nl.mncdn.com/blutv_tv8/smil:tv8_sd.smil/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/fokus-fokus/IPTV/main/logos/now.png" group-title="ULUSAL",NOW (FOX)
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/fokus-fokus/IPTV/main/logos/now.png" group-title="Ulusal Kanallar",NOW (FOX)
 https://mn-nl.mncdn.com/blutv_fox/smil:fox_sd.smil/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/fokus-fokus/IPTV/main/logos/ntv.png" group-title="ULUSAL",NTV
-https://mn-nl.mncdn.com/blutv_ntv/ntv_sd.smil/playlist.m3u8
