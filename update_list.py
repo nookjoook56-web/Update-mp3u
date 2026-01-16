@@ -1,36 +1,85 @@
 import requests
+import base64
+import re
 
-def create_m3u():
-    # Sizin verdiğiniz güncel kanal listesi
-    content = """#EXTM3U
-#EXTINF:-1 tvg-id="TRT1 HD.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6c/TRT_1_logo_%282012-2021%29.png" group-title="Ulusal",TRT1
-http://89.187.191.41/TRT-1-HD-TR/video.m3u8
-#EXTINF:-1 tvg-id="ATV HD.tr" tvg-logo="https://i.ibb.co/DwFJ0vn/atv.png" group-title="Ulusal",ATV
-http://95.174.71.114/TR-ATV/index.m3u8
-#EXTINF:-1 tvg-id="STAR TV HD.tr" tvg-logo="https://i.ibb.co/hY3Z8zx/star-tv.png" group-title="Ulusal",STAR TV
-http://95.174.71.114:80/TR-STAR/index.m3u8
-#EXTINF:-1 tvg-id="SHOW TV HD.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/f1/Logo_of_Show_TV.png" group-title="Ulusal",SHOW TV
-http://95.174.71.114:80/TR-SHOW/index.m3u8
-#EXTINF:-1 tvg-id="BEYAZ TV HD.tr" tvg-logo="https://tvprofil.com/img/kanali-logo/Beyaz_TV_TR_logo_v2.png?1734094253" group-title="Ulusal",BEYAZ TV
-https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_1080p.m3u8
-#EXTINF:-1 tvg-id="TV8 HD.tr" tvg-logo="https://i.ibb.co/Kr5SFY1/tv8.png" group-title="Ulusal",TV 8
-http://95.174.71.114/TR-TV8/index.m3u8
-#EXTINF:-1 tvg-id="KANAL 7 HD.tr" tvg-logo="https://e7.pngegg.com/pngimages/361/407/png-clipart-kanal-7-high-definition-television-television-channel-streaming-television-others-television-angle-thumbnail.png" group-title="Ulusal",KANAL 7
-https://kanal7-live.daioncdn.net/kanal7/kanal7_1080p.m3u8
-#EXTINF:-1 tvg-id="360 HD.tr" tvg-logo="https://i.ibb.co/s3gJCGL/360.png" group-title="Ulusal",360 TV
-https://turkmedya-live.ercdn.net/tv360/tv360_720p.m3u8
-#EXTINF:-1 tvg-id="HABERTÜRK HD.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/78/Haberturk_logo.png" group-title="Haber",HABER TURK
-https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/haberturktv/haberturktv_1080p.m3u8
-#EXTINF:-1 tvg-id="TRT HABER HD.tr" tvg-logo="https://logowik.com/content/uploads/images/trt-haber5539.jpg" group-title="Haber",TRT HABER
-https://tv-trthaber.medya.trt.com.tr/master_720.m3u8
-#EXTINF:-1 tvg-id="KanalD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/08/Kanal_D_logo_2011.png" group-title="Ulusal Kanallar",Kanal D
-https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
-#EXTINF:-1 tvg-id="NOWTV.tr" tvg-logo="https://www.nowtv.com.tr/static/img/now-logo.png", NOW TV
-https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8|User-Agent=Mozilla/5.0"""
+# --- AYARLARINIZ ---
+# Buraya yeni aldığın ghp_ ile başlayan tokeni yapıştır
+GITHUB_TOKEN = "" 
+REPO = "nookjoook56-web/Update-mp3u"
+DOSYA_YOLU = "playlist.m3u"
 
-    with open("playlist.m3u", "w", encoding="utf-8") as f:
-        f.write(content)
-    print("M3U dosyası başarıyla güncellendi.")
+# --- IPTV KAYNAĞI ---
+# Bu linki kimseyle paylaşmaman güvenliğin için önemlidir.
+IPTV_URL = "https://raw.githubusercontent.com/nookjoook56-web/Update-mp3u/refs/heads/main/playlist.m3u"
+
+def kanal_temizle(ad):
+    """Kanal isimlerini VIVO X tarzında sadeleştirir."""
+    ad = ad.replace("TR:", "").replace("HD", "").replace("HQ", "").replace("tr:", "").strip()
+    return ad
+
+def iptv_to_github():
+    headers = {'User-Agent': 'Mozilla/5.0'}
+    print(">> İşlem başlatıldı...")
+    
+    try:
+        # Listeyi çek
+        res = requests.get(IPTV_URL, headers=headers, timeout=20)
+        res.raise_for_status()
+        lines = res.text.split('\n')
+        
+        m3u_output = "#EXTM3U\n"
+        sayac = 0
+        
+        # Filtreleme Listeleri
+        sporlar = ["BEIN", "S SPORT", "TIVIBU SPOR", "TRT SPOR", "A SPOR"]
+        ulusallar = ["TRT 1", "ATV", "SHOW", "STAR", "KANAL D", "TV8", "NOW", "FOX", "KANAL 7"]
+
+        for i in range(len(lines)):
+            if lines[i].startswith('#EXTINF:'):
+                bilgi = lines[i].upper()
+                url = lines[i+1].strip() if (i+1) < len(lines) else ""
+                
+                if url.startswith('http'):
+                    is_spor = any(s in bilgi for s in sporlar)
+                    is_ulusal = any(u in bilgi for u in ulusallar)
+                    
+                    if is_spor or is_ulusal:
+                        original_name = lines[i].split(',')[-1]
+                        clean_name = kanal_temizle(original_name)
+                        grup = "Spor Kanalları" if is_spor else "Ulusal Kanallar"
+                        
+                        logo_match = re.search('tvg-logo="(.*?)"', lines[i])
+                        logo = logo_match.group(1) if logo_match else ""
+                        
+                        m3u_output += f'#EXTINF:-1 tvg-logo="{logo}" group-title="{grup}",{clean_name}\n{url}\n'
+                        sayac += 1
+
+        print(f">> {sayac} adet profesyonel kanal hazırlandı. GitHub'a yükleniyor...")
+        
+        # GitHub API
+        api_url = f"https://api.github.com/repos/{REPO}/contents/{DOSYA_YOLU}"
+        gh_headers = {
+            "Authorization": f"token {GITHUB_TOKEN.strip()}", 
+            "Accept": "application/vnd.github.v3+json"
+        }
+        
+        # Eski dosyanın SHA bilgisini al
+        sha_res = requests.get(api_url, headers=gh_headers)
+        sha = sha_res.json().get('sha') if sha_res.status_code == 200 else None
+        
+        # Base64 dönüşümü ve yükleme
+        content_b64 = base64.b64encode(m3u_output.encode("utf-8")).decode("utf-8")
+        payload = {"message": "VIVOX Liste Güncelleme", "content": content_b64}
+        if sha: payload["sha"] = sha
+        
+        put_res = requests.put(api_url, json=payload, headers=gh_headers)
+        if put_res.status_code in [200, 201]:
+            print("🚀 BAŞARILI: Listeniz GitHub üzerinde güncellendi!")
+        else:
+            print(f"❌ HATA: GitHub yüklemesi başarısız. (Kod: {put_res.status_code})")
+
+    except Exception as e:
+        print(f"❌ HATA: {str(e)}")
 
 if __name__ == "__main__":
-    create_m3u()
+    iptv_to_github()
