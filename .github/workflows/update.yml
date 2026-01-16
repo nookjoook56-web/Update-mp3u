@@ -1,0 +1,32 @@
+name: Günlük M3U Güncelleme
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Her gece 00:00'da çalışır
+  workflow_dispatch: # Manuel çalıştırmak isterseniz
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu kopyala
+        uses: actions/checkout@v3
+
+      - name: Python Kurulumu
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Gereksinimleri Kur
+        run: pip install requests
+
+      - name: Scripti Çalıştır
+        run: python update_list.py
+
+      - name: Değişiklikleri Kaydet ve Pushla
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add playlist.m3u
+          git commit -m "Liste otomatik güncellendi" || exit 0
+          git push
