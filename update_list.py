@@ -10,7 +10,7 @@ DOSYA_YOLU = "playlist.m3u"
 
 # --- IPTV KAYNAĞI ---
 # Bu linki kimseyle paylaşmaman güvenliğin için önemlidir.
-IPTV_URL = "BURAYA_IPTV_LINKINI_YAPIŞTIR"
+IPTV_URL = "https://raw.githubusercontent.com/nookjoook56-web/Update-mp3u/refs/heads/main/playlist.m3u"
 
 def kanal_temizle(ad):
     """Kanal isimlerini VIVO X tarzında sadeleştirir."""
