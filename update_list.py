@@ -4,7 +4,7 @@ import re
 
 # --- AYARLARINIZ ---
 # Buraya yeni aldığın ghp_ ile başlayan tokeni yapıştır
-GITHUB_TOKEN = "BURAYA_GHP_TOKEN_GELECEK" 
+GITHUB_TOKEN = "" 
 REPO = "nookjoook56-web/Update-mp3u"
 DOSYA_YOLU = "playlist.m3u"
 
