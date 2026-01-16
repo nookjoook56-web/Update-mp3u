@@ -1,74 +1,36 @@
 import requests
-import base64
 
-# --- AYARLARINIZ ---
-TOKEN = ""
-REPO = "nookjoook56-web/Update-mp3u"
-DOSYA_YOLU = "playlist.m3u"
-IPTV_URL = "http://happytv.ooguy.com/get.php?username=erdem10&password=Cw1360cv&type=m3u_plus"
-# --------------------
+def create_m3u():
+    # Sizin verdiğiniz güncel kanal listesi
+    content = """#EXTM3U
+#EXTINF:-1 tvg-id="TRT1 HD.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6c/TRT_1_logo_%282012-2021%29.png" group-title="Ulusal",TRT1
+http://89.187.191.41/TRT-1-HD-TR/video.m3u8
+#EXTINF:-1 tvg-id="ATV HD.tr" tvg-logo="https://i.ibb.co/DwFJ0vn/atv.png" group-title="Ulusal",ATV
+http://95.174.71.114/TR-ATV/index.m3u8
+#EXTINF:-1 tvg-id="STAR TV HD.tr" tvg-logo="https://i.ibb.co/hY3Z8zx/star-tv.png" group-title="Ulusal",STAR TV
+http://95.174.71.114:80/TR-STAR/index.m3u8
+#EXTINF:-1 tvg-id="SHOW TV HD.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/f1/Logo_of_Show_TV.png" group-title="Ulusal",SHOW TV
+http://95.174.71.114:80/TR-SHOW/index.m3u8
+#EXTINF:-1 tvg-id="BEYAZ TV HD.tr" tvg-logo="https://tvprofil.com/img/kanali-logo/Beyaz_TV_TR_logo_v2.png?1734094253" group-title="Ulusal",BEYAZ TV
+https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_1080p.m3u8
+#EXTINF:-1 tvg-id="TV8 HD.tr" tvg-logo="https://i.ibb.co/Kr5SFY1/tv8.png" group-title="Ulusal",TV 8
+http://95.174.71.114/TR-TV8/index.m3u8
+#EXTINF:-1 tvg-id="KANAL 7 HD.tr" tvg-logo="https://e7.pngegg.com/pngimages/361/407/png-clipart-kanal-7-high-definition-television-television-channel-streaming-television-others-television-angle-thumbnail.png" group-title="Ulusal",KANAL 7
+https://kanal7-live.daioncdn.net/kanal7/kanal7_1080p.m3u8
+#EXTINF:-1 tvg-id="360 HD.tr" tvg-logo="https://i.ibb.co/s3gJCGL/360.png" group-title="Ulusal",360 TV
+https://turkmedya-live.ercdn.net/tv360/tv360_720p.m3u8
+#EXTINF:-1 tvg-id="HABERTÜRK HD.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/78/Haberturk_logo.png" group-title="Haber",HABER TURK
+https://rmtftbjlne.turknet.ercdn.net/bpeytmnqyp/haberturktv/haberturktv_1080p.m3u8
+#EXTINF:-1 tvg-id="TRT HABER HD.tr" tvg-logo="https://logowik.com/content/uploads/images/trt-haber5539.jpg" group-title="Haber",TRT HABER
+https://tv-trthaber.medya.trt.com.tr/master_720.m3u8
+#EXTINF:-1 tvg-id="KanalD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/08/Kanal_D_logo_2011.png" group-title="Ulusal Kanallar",Kanal D
+https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
+#EXTINF:-1 tvg-id="NOWTV.tr" tvg-logo="https://www.nowtv.com.tr/static/img/now-logo.png", NOW TV
+https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8|User-Agent=Mozilla/5.0"""
 
-def iptv_islem():
-    headers = {'User-Agent': 'Mozilla/5.0'}
-    
-    print(">> Liste indiriliyor...")
-    try:
-        response = requests.get(IPTV_URL, headers=headers, timeout=30)
-        lines = response.text.split('\n')
-        
-        print(">> Filtre uygulanıyor (Sadece Bein, S Sport ve Ulusal)...")
-        temiz_icerik = "#EXTM3U\n"
-        sayac = 0
-        
-        # Sadece bu kelimeleri içeren kanallar alınacak
-        # Büyük/küçük harf duyarlılığı için hepsi büyük harf kontrol edilecek
-        hedef_kanallar = [
-            "BEIN SPORTS", "BEIN SPORT", "S SPORT", "TRT SPOR", "A SPOR", "TIVIBU SPOR", # SPOR
-            "TRT 1", "ATV", "SHOW TV", "STAR TV", "KANAL D", "TV8", "NOW TV", "FOX", "KANAL 7", # ULUSAL
-            "HABERTURK", "NTV", "CNN TURK", "A HABER", "ULKE TV" # HABER/DİĞER
-        ]
-
-        for i in range(len(lines)):
-            if lines[i].startswith('#EXTINF:'):
-                bilgi = lines[i].upper()
-                link = lines[i+1].strip() if (i + 1) < len(lines) else ""
-                
-                if link.startswith('http'):
-                    # Sadece hedef listesindeki kanalları ve sadece Türkiye gruplarını filtrele
-                    eslesme_var_mi = any(x in bilgi for x in hedef_kanallar)
-                    
-                    # Yabancı Bein kanallarını elemek için 'FRANCE' veya 'ARAB' gibi kelimeleri dışla
-                    yabanci_mi = any(y in bilgi for y in ["FRANCE", "ARAB", "USA", "UK", "ESPANA"])
-
-                    if eslesme_var_mi and not yabanci_mi:
-                        temiz_icerik += lines[i] + "\n" + link + "\n"
-                        sayac += 1
-        
-        print(f"✅ Filtreleme bitti: {sayac} kanal seçildi.")
-        
-        if "ghp_" in TOKEN:
-            github_url = f"https://api.github.com/repos/{REPO}/contents/{DOSYA_YOLU}"
-            gh_headers = {"Authorization": f"token {TOKEN.strip()}", "Accept": "application/vnd.github.v3+json"}
-            
-            # SHA al
-            res = requests.get(github_url, headers=gh_headers)
-            sha = res.json().get('sha') if res.status_code == 200 else None
-            
-            # Yükle
-            encoded = base64.b64encode(temiz_icerik.encode("utf-8")).decode("utf-8")
-            payload = {"message": "Sadece Bein ve Ulusal Kanallar", "content": encoded}
-            if sha: payload["sha"] = sha
-            
-            put_res = requests.put(github_url, json=payload, headers=gh_headers)
-            if put_res.status_code in [200, 201]:
-                print(f"🚀 BAŞARILI! {sayac} kanal GitHub'a gönderildi.")
-            else:
-                print("❌ GitHub Hatası:", put_res.json().get('message'))
-        else:
-            print("⚠️ Token girilmediği için GitHub'a yüklenmedi.")
-
-    except Exception as e:
-        print(f"❌ Hata: {e}")
+    with open("playlist.m3u", "w", encoding="utf-8") as f:
+        f.write(content)
+    print("M3U dosyası başarıyla güncellendi.")
 
 if __name__ == "__main__":
-    iptv_islem()
+    create_m3u()
