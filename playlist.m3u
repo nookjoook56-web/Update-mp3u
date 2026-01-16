@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1,Kanal 1
+http://ornek.com/yayin1.m3u8
+#EXTINF:-1,Kanal 2
+http://ornek.com/yayin2.m3u8
