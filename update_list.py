@@ -2,7 +2,7 @@ import requests
 import base64
 
 # --- AYARLARINIZ ---
-TOKEN = "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"
+TOKEN = ""
 REPO = "nookjoook56-web/Update-mp3u"
 DOSYA_YOLU = "playlist.m3u"
 IPTV_URL = "http://happytv.ooguy.com/get.php?username=erdem10&password=Cw1360cv&type=m3u_plus"
