@@ -858,8 +858,6 @@ https://streams.uzunmuhalefet.com/stream/8145eb58-1809-4af2-8940-c6cb1c52f076.m3
 #EXTINF:-1 group-title="7/24 Dizi" tvg-logo="https://assets.uzunmuhalefet.com/logos/667c8417-9b3a-4a11-bd84-fbc02e4289e3.png" tvg-url="" tvg-id="",Selena
 
 https://streams.uzunmuhalefet.com/stream/d372d963-6ca8-4ed6-8a00-ecce697414f0.m3u8
-
-
-
-
-
+#EXTINF:-1, CANLI MAC YAYINI
+#EXTVLCOPT:http-referrer=https://sultansportv178.com/
+https://b.4a48861ed9596c2271.workers.dev/bc2b05d321cb80050c5d035a9daeb26d/-/5062/playlist.m3u8?verify=1773643949383~185.185.50.54~3c9c1bdace55db84b58b8abc77d7abaf
